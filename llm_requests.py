@@ -22,9 +22,8 @@ def api_post_llm(
         full_content: str
     )-> list[dict]:
 
-
     response = client.chat.completions.create(
-        model="pd-dse-gpt-35-turbo", # The deployment name you chose when you deployed the GPT-3.5-Turbo or GPT-4 model.
+        model="xxx", # GPT-3.5-Turbo or GPT-4
         messages=[
             {
                 "role": "user", 
